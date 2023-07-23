@@ -1,8 +1,8 @@
 
-const wrapper=document.querySelector(".sliderWrapper");
-const menuItems=document.querySelectorAll(".menuItem");
+var wrapper=document.querySelector(".sliderWrapper");
+var menuItems=document.querySelectorAll(".menuItem");
 
-const products = [
+var products = [
     {
       id: 1,
       title: "Air Force",
@@ -86,14 +86,14 @@ const products = [
   ];
 
   
-  let choosenProduct = products[0];
+var choosenProduct = products[0];
 
-const currentProductImg = document.querySelector(".productImg");
-const currentProductTitle = document.querySelector(".productTitle");
-const currentProductPrice = document.querySelector(".productPrice");
-const currentProductColors = document.querySelectorAll(".color");
-const currentProductSizes = document.querySelectorAll(".size");
-const currentProductDesc=document.querySelector(".productDesc");
+var currentProductImg = document.querySelector(".productImg");
+var currentProductTitle = document.querySelector(".productTitle");
+var currentProductPrice = document.querySelector(".productPrice");
+var currentProductColors = document.querySelectorAll(".color");
+var currentProductSizes = document.querySelectorAll(".size");
+var currentProductDesc=document.querySelector(".productDesc");
 
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
@@ -137,9 +137,9 @@ currentProductSizes.forEach((size,index) =>{
 });
 
 
-const productButton=document.querySelector(".productButton");
-const payment=document.querySelector(".payment");
-const close=document.querySelector(".close");
+var productButton=document.querySelector(".productButton");
+var payment=document.querySelector(".payment");
+var close=document.querySelector(".close");
 
 productButton.addEventListener("click",()=>{
     payment.style.display="flex";
